@@ -8,8 +8,12 @@ MODULE_NAME = "capsa_service_network"
 MODULE_FILE = MODULE_NAME + ".py"
 
 # --- PROJECT DIR (make editable in UI) ---
-default_proj = r"C:\Users\VENKAT\Desktop\capsa-project"
-PROJECT_DIR = st.text_input("Project folder (where capsa_service_network.py lives)", value=default_proj)
+import os
+default_proj = os.getcwd()  # dynamically gets the current working directory
+PROJECT_DIR = st.text_input(
+    "Project folder (where capsa_service_network.py lives)",
+    value=default_proj
+)
 
 st.title("CapSA service model runner")
 
