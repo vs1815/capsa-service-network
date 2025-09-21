@@ -87,7 +87,7 @@ if uploaded is not None:
         st.error(f"Failed to save uploaded file to project dir: {e}")
         st.stop()
 
-st.subheader("Quick parameter overrides (these will update the module CFG if present)")
+st.subheader("CapSA Network Design_QWIK Supply Chain")
 iters = st.number_input("Iterations (iters)", value=100, min_value=1, step=1)
 pop_size = st.number_input("Population size (pop_size)", value=60, min_value=1, step=1)
 primary_radius = st.number_input("Primary service radius (km)", value=30.0, step=1.0)
